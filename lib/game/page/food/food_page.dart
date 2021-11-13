@@ -3,8 +3,6 @@ import 'package:lastproject/game/page/food/food_list_page.dart';
 import 'package:lastproject/game/page/food/food_order_page.dart';
 
 
-
-
 class FoodPage extends StatefulWidget {
   const FoodPage({Key? key}) : super(key: key);
 

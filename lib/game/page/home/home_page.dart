@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:lastproject/game/page/food/food_page.dart';
+import 'package:lastproject/game/page/food/menupage.dart';
 import 'package:lastproject/game/page/profile_page.dart';
-
-
 
 
 class HomePage extends StatefulWidget {
@@ -16,7 +15,7 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> {
   var _subPageIndex = 0;
-  List<String> titleName = ["TEA", "Profile"];
+  List<String> titleName = ["RECOMAND","TEA", "Profile"];
 
   @override
   Widget build(BuildContext context) {
@@ -63,9 +62,10 @@ class _HomePageState extends State<HomePage> {
                         style: TextStyle(color: Colors.white70, fontSize: 14))
                   ],
                 ),
-              ),
-              _buildDrawerItem(Icons.fastfood, "TEA", 0),
-              _buildDrawerItem(Icons.person, "Profile", 1),
+              )
+              ,_buildDrawerItem(Icons.fastfood, "RECOMAND", 0),
+              _buildDrawerItem(Icons.fastfood, "TEA", 1),
+              _buildDrawerItem(Icons.person, "Profile", 2),
             ],
           ),
         ),
@@ -76,8 +76,10 @@ class _HomePageState extends State<HomePage> {
   Widget _buildSubPage() {
     switch (_subPageIndex) {
       case 0: // home page
+        return menuPage();
+      case 1: // home page
         return FoodPage();
-      case 1:
+      case 2:
         return ProfilePage();
       default:
         return SizedBox.shrink();
