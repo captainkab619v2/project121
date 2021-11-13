@@ -74,6 +74,36 @@ class _FoodListPageState extends State<FoodListPage> {
       price: 19,
       image: 'lemonredtea.jpg',
     ),
+    FoodItem(
+      id: 11,
+      name: 'ชานมโกโก้',
+      price: 24,
+      image: 'chocolatemilktea.jpg',
+    ),
+    FoodItem(
+      id: 12,
+      name: 'ชานมกาแฟ',
+      price: 24,
+      image: 'coffeemilktea.jpg',
+    ),
+    FoodItem(
+      id: 13,
+      name: 'ชานมแคนตาลูป',
+      price: 24,
+      image: 'honeydewmilktea.jpg',
+    ),
+    FoodItem(
+      id: 14,
+      name: 'ชานมเผือก',
+      price: 24,
+      image: 'taromilktea.jpg',
+    ),
+    FoodItem(
+      id: 15,
+      name: 'ชานมสตรอเบอร์รี่',
+      price: 24,
+      image: 'strawberrymilktea.jpg',
+    ),
   ];
 
   @override
